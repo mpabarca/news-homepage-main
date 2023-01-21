@@ -1,0 +1,11 @@
+// Base
+@import './base/global';
+
+// Pages
+@import './pages/new.scss';
+@import './pages/categories.scss';
+@import './pages/popular.scss';
+@import './pages/trending.scss';
+
+// Components
+@import './components/navbar.scss';
