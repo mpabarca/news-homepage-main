@@ -1,7 +1,7 @@
 const New = () => {
     return (
         <div>
-            Hola !
+            <h1>Hola !</h1>
         </div>
     )
 };
