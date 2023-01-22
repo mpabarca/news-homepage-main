@@ -1,4 +1,6 @@
 body{
-    background-color: bisque;
+    background-color: $color-neutral-white;
     font-family: $font-family-base;
+    color: $color-neutral-dark-blue;
+    padding: 5rem 8rem;
 }

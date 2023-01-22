@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul.menu{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: $color-neutral-dark-gray-blue;
+            &:active, &:hover {
+                color: $color-primary-red;
+            }
+        }
+}
+}
