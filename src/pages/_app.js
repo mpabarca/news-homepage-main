@@ -1,10 +1,12 @@
 import '@/styles/index.scss'
-import DesktopNavbar from '../components/desktopNavbar';
+import DesktopNavbar from '../components/molecules/desktopNavbar';
+import MobileNavbar from '../components/molecules/mobileNavbar';
+
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <DesktopNavbar />
+      <MobileNavbar />
       <Component {...pageProps} />
     </>
   )

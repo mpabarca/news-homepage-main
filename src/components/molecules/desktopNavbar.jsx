@@ -1,13 +1,18 @@
-import { navLinks } from '../data/navbarLinks';
 import Link from 'next/link';
-import { Logo } from './logo';
+import { navLinks } from '../../data/navbarLinks';
+import Image from 'next/image';
+import logo from '../../../public/logo.png';
 
 const DesktopNavbar = () => {
     return (
-        <nav>
+        <nav className='desktop'>
             <div className='logo'>
                 <Link href='/'>
-                    <Logo />
+                    <Image 
+                        src={logo}
+                        width={65}
+                        alt='logo'
+                    />
                 </Link >
             </div>
             <ul className='menu'>
