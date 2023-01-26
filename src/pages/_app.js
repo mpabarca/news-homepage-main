@@ -6,6 +6,7 @@ import MobileNavbar from '../components/molecules/mobileNavbar';
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <DesktopNavbar />
       <MobileNavbar />
       <Component {...pageProps} />
     </>
