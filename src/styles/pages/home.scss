@@ -6,6 +6,9 @@
     margin: 3rem 0;
     .popular{
         width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         img {
             width: 100%;
             height: auto;
@@ -14,7 +17,6 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 2rem 0;
             h1 {
                 width: 40%;
                 font-size: 3rem;
