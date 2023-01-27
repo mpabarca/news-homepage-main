@@ -1,17 +1,20 @@
 import { news } from '../../data/news';
+import Link from 'next/link';
 
 const NewsSectionHome = () => {
     return (
-        <div className='list-news'>
+        <div className='news'>
             <h1>New</h1>
-            {news.map((element, index) => {
-            return (
-                <div className='new' key={index}>
-                <h2>{element.title}</h2>
-                <p>{element.subtitle}</p>
-                </div>
-            )
-            })}
+            <div className='list-news'>
+                {news.map((element, index) => {
+                return (
+                    <Link className='new' key={index} href='/'>
+                        <h3>{element.title}</h3>
+                        <p>{element.subtitle}</p>
+                    </Link>
+                )
+                })}
+            </div>
         </div>
     )
 };
