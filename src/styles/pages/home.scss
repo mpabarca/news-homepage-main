@@ -1,0 +1,56 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+    .popular{
+        width: 60%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .popular-new {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem 0;
+            h1 {
+                width: 40%;
+                font-size: 3rem;
+                color: $color-neutral-dark-blue;
+                letter-spacing: .05rem;
+                font-weight: $font-weight-very-bold;
+            }
+            .more-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                p {
+                    font-size: $font-size-paragraph;
+                    color: $color-neutral-dark-gray-blue;
+                    margin: auto;
+                }
+                button {
+                    background-color: $color-neutral-dark-blue;
+                    color: $color-neutral-white;
+                    border: none;
+                    padding: 1.2rem 1.5rem;
+                    max-width: 12rem;
+                    letter-spacing: .3rem;
+                    font-size: .8rem;
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+    }
+    .list-news {
+        width: 30%;
+        background-color: $color-neutral-dark-blue;
+        color: $color-neutral-white;
+        h1, h2:hover, h2:active{
+           color: $color-primary-orange; 
+        }
+    }
+}

@@ -9,6 +9,11 @@ body {
     font-family: $font-family-base;
     color: $color-neutral-dark-blue;
     padding: $padding-global;
+    margin: auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+
 }
 
 @media only screen and (max-width: $size-breakpoint-responsive){
