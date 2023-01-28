@@ -34,7 +34,9 @@
                     color: $color-neutral-dark-gray-blue;
                     margin: auto;
                 }
-                button {
+                a {
+                    text-decoration: none;
+                    text-align: center;
                     background-color: $color-neutral-dark-blue;
                     color: $color-neutral-white;
                     border: none;
@@ -44,7 +46,8 @@
                     font-size: .8rem;
                     font-weight: $font-weight-bold;
                     &:hover, &:active {
-                        color: $color-primary-orange; 
+                        background-color: $color-primary-red; 
+                        color: $color-neutral-white;
                     }
                 }
             }
@@ -95,15 +98,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 3rem;
         a.trending {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             height: 120px;
-            max-width: 400px;
+            width: 400px;
             text-decoration: none;
+            margin-top: 2rem;
             img {
                 height: 120px;
                 width: auto;
@@ -130,6 +135,55 @@
                 h3 {
                     color: $color-primary-red; 
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $size-breakpoint-responsive){
+    .home {
+        flex-direction: column;
+        .popular, .news {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+        .popular {
+            img {
+                margin-bottom: 1rem;
+            }
+            .popular-new {
+                flex-direction: column;
+                h1, .more-info {
+                    width: 100%;
+                }
+                h1, .more-info p {
+                    margin-bottom: 1rem;
+                }
+                .more-info {
+                    text-align: justify;
+                }
+            }
+        }
+        .list-trending {
+            flex-direction: column;
+            margin-top: 0;
+            .trending {
+                margin: auto;
+                align-items: center;
+                max-width: 500px;
+                width: auto !important;
+                height: 150px !important;
+                gap: .5rem;
+                .info-trending {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    h3 {
+                        font-size: 1.1rem !important;
+                    }
+                    p {
+                        font-size: $font-size-paragraph-mobile !important;
+                    }}
             }
         }
     }
